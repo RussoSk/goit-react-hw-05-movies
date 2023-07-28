@@ -1,0 +1,44 @@
+/* Cast.module.css */
+
+.castContainer {
+    
+    max-width: 50%;
+    padding: 1rem;
+    background-color: #f0f0f0;
+  }
+  
+  .castTitle {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .actorList {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .actorCard {
+    flex: 1 0 200px;
+    margin: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 0.5rem;
+    text-align: center;
+  }
+  
+  .actorImage {
+    width: 100px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin: 0 auto 0.5rem;
+  }
+  
+  .actorName {
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 0;
+  }
+  

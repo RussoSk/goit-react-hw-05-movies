@@ -1,0 +1,23 @@
+
+.header {
+    background-color: #8d8686;
+    color: #fff;
+    padding: 1rem;
+  }
+  
+  .navLink {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 1rem;
+  }
+  
+  .activeNavLink {
+    color: orange;
+  }
+  
+  .navList {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+  }
+  

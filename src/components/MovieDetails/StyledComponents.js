@@ -1,0 +1,14 @@
+
+import styled from 'styled-components';
+import { NavLink } from 'react-router-dom';
+
+export const StyledLink = styled(NavLink)`
+  color: black;
+
+  &&&.active {
+    color: red !important;
+    font-weight: bold;
+    
+   
+  }
+`;

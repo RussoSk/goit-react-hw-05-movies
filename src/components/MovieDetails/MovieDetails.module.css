@@ -1,0 +1,82 @@
+
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.goBackButton {
+  align-self: flex-start;
+  margin-bottom: 10px;
+}
+
+.oneSection {
+  display: flex;
+  height: 30%;
+}
+
+.imageSection {
+  width: 270px;
+  height: 350px;
+}
+
+.movieImage {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.infoSection {
+  padding: 0 20px;
+  width: 50%;
+}
+
+.movieTitle {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.movieRating {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.movieOverview {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.movieGenres {
+  font-size: 16px;
+}
+
+.tooSection {
+  display: flex;
+}
+
+.buttonsSection {
+  height: 50px;
+  width: 220px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+ 
+}
+
+.castButton,
+.reviewsButton {
+  padding: 10px 20px;
+  font-size: 16px;
+  text-decoration: none;
+  color: #000;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contentSection {
+  flex: 3;
+  padding: 20px;
+}

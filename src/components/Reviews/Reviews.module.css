@@ -1,0 +1,30 @@
+
+.reviewSection {
+  max-width: 70%;
+  background-color: #f0f0f0;
+  border: 1px solid rgb(37, 37, 36);
+  padding: 20px;
+}
+.reviewList {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .reviewItem {
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 1rem;
+  }
+  
+  .lastReviewItem {
+    border-bottom: none;
+  }
+  
+  .reviewTitle {
+    margin-bottom: 0.5rem;
+  }
+  
+  .reviewContent {
+    line-height: 1.6;
+  }
+  
