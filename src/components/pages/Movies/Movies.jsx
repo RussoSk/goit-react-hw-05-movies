@@ -1,12 +1,14 @@
 
 import React, { useState } from 'react';
-import { Link, Outlet } from 'react-router-dom';
+import { Link, Outlet, useLocation } from 'react-router-dom';
 import { searchMovies } from '../../Api/Api';
 
 const Movies = () => {
   const [searchQuery, setSearchQuery] = useState('');
   const [searchResults, setSearchResults] = useState([]);
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const location = useLocation();
+  console.log(location);
 
   const handleSearch = async (e) => {
     e.preventDefault();
@@ -39,7 +41,7 @@ const Movies = () => {
         <ul>
           {searchResults.map((movie) => (
             <li key={movie.id}>
-              <Link to={`/movies/${movie.id}`}>
+              <Link to={`/movies/${movie.id}`} state={{ from: location }}>
                 <img src={`https://image.tmdb.org/t/p/w200${movie.poster_path}`} alt={movie.title} />
                 <h3>{movie.title}</h3>
               </Link>
