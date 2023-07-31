@@ -1,10 +1,10 @@
 
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 const MoviesList = ({ movies }) => {
   const [selectedMovie, setSelectedMovie] = useState(null);
-
+  const location = useLocation();
   const handleMovieClick = (movie) => {
     setSelectedMovie(movie);
   };
@@ -13,7 +13,7 @@ const MoviesList = ({ movies }) => {
     <div>
       {movies.map((movie) => (
         <div key={movie.id} onClick={() => handleMovieClick(movie)}>
-          <Link to={`/movies/${movie.id}`}>
+          <Link to={`/movies/${movie.id}`} state={{ from: location }}>
             <h3>{movie.title}</h3>
           </Link>
         </div>

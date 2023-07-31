@@ -9,6 +9,6 @@ export const StyledLink = styled(NavLink)`
     color: red !important;
     font-weight: bold;
     
-   
+    
   }
 `;

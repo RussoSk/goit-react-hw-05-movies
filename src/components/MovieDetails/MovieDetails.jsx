@@ -11,6 +11,7 @@ const MovieDetails = () => {
   const [movieDetails, setMovieDetails] = useState(null);
   const location = useLocation();
   const backLinkHref = useRef(location.state?.from ?? '/');
+  
   console.log(location);
   console.log(backLinkHref);
 
